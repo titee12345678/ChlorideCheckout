@@ -1,0 +1,1698 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>วิเคราะห์สีย้อม Dianix® — DyStar</title>
+    <meta name="description" content="วิเคราะห์คุณสมบัติสีย้อม Dianix® Blue S-BG, Orange S-G 200%, Red S-G 01, Yellow S-6G อย่างละเอียด">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+Thai:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-icon-dark">🌙</span>
+        <span class="theme-icon-light">☀️</span>
+    </button>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-badge">DyStar® Technical Data Analysis</div>
+            <h1>วิเคราะห์สีย้อม <span class="gradient-text">Dianix®</span></h1>
+            <p class="hero-subtitle">คุณสมบัติ ข้อดี ข้อควรระวัง สำหรับสีย้อม Disperse 4 ตัวหลัก</p>
+            <div class="color-dots">
+                <span class="dot dot-blue" data-tooltip="Blue S-BG"></span>
+                <span class="dot dot-orange" data-tooltip="Orange S-G 200%"></span>
+                <span class="dot dot-red" data-tooltip="Red S-G 01"></span>
+                <span class="dot dot-yellow" data-tooltip="Yellow S-6G"></span>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>เลื่อนลง</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </header>
+
+    <!-- Quick Summary Cards -->
+    <section class="summary-section">
+        <div class="container">
+            <h2 class="section-title">สรุปภาพรวม</h2>
+            <p class="section-desc">เปรียบเทียบคุณสมบัติหลักของสีย้อม Dianix® ทั้ง 4 ตัว</p>
+            <div class="summary-cards">
+                <!-- Blue -->
+                <div class="card card-blue" data-color="blue">
+                    <div class="card-glow"></div>
+                    <div class="card-header">
+                        <div class="card-icon">🔵</div>
+                        <div>
+                            <h3>Blue S-BG</h3>
+                            <span class="card-badge badge-easy">ย้อมง่ายสุด</span>
+                        </div>
+                    </div>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <span class="stat-label">Level Uptake</span>
+                            <span class="stat-value highlight-good">2</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">pH Range</span>
+                            <span class="stat-value">3.0 - 9.0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Barré</span>
+                            <span class="stat-value">Very Good</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Metal Cu/Fe</span>
+                            <span class="stat-value">1 / 5</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Thermofix</span>
+                            <span class="stat-value">210°C</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">SD 1/1</span>
+                            <span class="stat-value">0.9%</span>
+                        </div>
+                    </div>
+                    <div class="card-warning">
+                        <span class="warning-icon">⚠️</span>
+                        <span>ทนแสง Carbon arc ต่ำ (3-4)</span>
+                    </div>
+                </div>
+
+                <!-- Orange -->
+                <div class="card card-orange" data-color="orange">
+                    <div class="card-glow"></div>
+                    <div class="card-header">
+                        <div class="card-icon">🟠</div>
+                        <div>
+                            <h3>Orange S-G 200%</h3>
+                            <span class="card-badge badge-caution">ไวต่อโลหะ</span>
+                        </div>
+                    </div>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <span class="stat-label">Level Uptake</span>
+                            <span class="stat-value">3</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">pH Range</span>
+                            <span class="stat-value">3.0 - 9.0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Barré</span>
+                            <span class="stat-value">Good</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Metal Cu/Fe</span>
+                            <span class="stat-value highlight-danger">5 / 5</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Thermofix</span>
+                            <span class="stat-value">210°C</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">SD 1/1</span>
+                            <span class="stat-value">1.0%</span>
+                        </div>
+                    </div>
+                    <div class="card-warning warning-danger">
+                        <span class="warning-icon">🚨</span>
+                        <span>Cu/Fe = 5/5 ต้องใช้ Sequestering agent!</span>
+                    </div>
+                </div>
+
+                <!-- Red -->
+                <div class="card card-red" data-color="red">
+                    <div class="card-glow"></div>
+                    <div class="card-header">
+                        <div class="card-icon">🔴</div>
+                        <div>
+                            <h3>Red S-G 01</h3>
+                            <span class="card-badge badge-danger">ระวังมากสุด</span>
+                        </div>
+                    </div>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <span class="stat-label">Level Uptake</span>
+                            <span class="stat-value">3</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">pH Range</span>
+                            <span class="stat-value highlight-danger">3.0 - 6.0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Barré</span>
+                            <span class="stat-value">Good</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Metal Cu/Fe</span>
+                            <span class="stat-value">1 / 5</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Thermofix</span>
+                            <span class="stat-value highlight-danger">220°C</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">SD 1/1</span>
+                            <span class="stat-value">0.84%</span>
+                        </div>
+                    </div>
+                    <div class="card-warning warning-danger">
+                        <span class="warning-icon">🚨</span>
+                        <span>pH แคบ, ห้ามใช้ Carrier, เปื้อน PA = 5</span>
+                    </div>
+                </div>
+
+                <!-- Yellow -->
+                <div class="card card-yellow" data-color="yellow">
+                    <div class="card-glow"></div>
+                    <div class="card-header">
+                        <div class="card-icon">🟡</div>
+                        <div>
+                            <h3>Yellow S-6G</h3>
+                            <span class="card-badge badge-star">ทนแสงดีสุด</span>
+                        </div>
+                    </div>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <span class="stat-label">Level Uptake</span>
+                            <span class="stat-value">3</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">pH Range</span>
+                            <span class="stat-value">3.0 - 7.0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Barré</span>
+                            <span class="stat-value highlight-good">Excellent</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Metal Cu/Fe</span>
+                            <span class="stat-value">4 / 2</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Thermofix</span>
+                            <span class="stat-value">210°C</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">SD 1/1</span>
+                            <span class="stat-value">0.54%</span>
+                        </div>
+                    </div>
+                    <div class="card-warning">
+                        <span class="warning-icon">⚠️</span>
+                        <span>เปื้อน Cotton/Wool สูง, ห้ามใช้ Carrier</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Tabs Section -->
+    <section class="detail-section">
+        <div class="container">
+            <h2 class="section-title">รายละเอียดแต่ละสี</h2>
+            <p class="section-desc">เลือกสีเพื่อดูข้อมูลเชิงลึก</p>
+
+            <div class="tabs">
+                <button class="tab active" data-tab="blue">
+                    <span class="tab-dot tab-dot-blue"></span> Blue S-BG
+                </button>
+                <button class="tab" data-tab="orange">
+                    <span class="tab-dot tab-dot-orange"></span> Orange S-G 200%
+                </button>
+                <button class="tab" data-tab="red">
+                    <span class="tab-dot tab-dot-red"></span> Red S-G 01
+                </button>
+                <button class="tab" data-tab="yellow">
+                    <span class="tab-dot tab-dot-yellow"></span> Yellow S-6G
+                </button>
+            </div>
+
+            <!-- Blue Detail -->
+            <div class="tab-content active" id="tab-blue">
+                <div class="detail-grid">
+                    <!-- Suitability -->
+                    <div class="detail-card">
+                        <h4><span class="detail-icon">🧪</span> ความเหมาะสม (Suitability)</h4>
+                        <div class="table-wrapper">
+                            <table>
+                                <thead><tr><th>กระบวนการ</th><th>Pale</th><th>Medium</th><th>Dark</th></tr></thead>
+                                <tbody>
+                                    <tr><td>HT Yarn / Piece</td><td class="good">++/++</td><td class="good">++/++</td><td class="good">++/++</td></tr>
+                                    <tr><td>ใช้ Carrier</td><td class="good">++</td><td class="ok">+</td><td class="bad">-</td></tr>
+                                    <tr><td>พิมพ์ HTS / PS</td><td class="good">++/++</td><td class="good">++/++</td><td class="good">++/++</td></tr>
+                                    <tr><td>Discharge Ground (alk./SnCl₂)</td><td class="bad">- / -</td><td class="bad">- / -</td><td class="bad">- / -</td></tr>
+                                    <tr><td>Discharge Illumination (alk./SnCl₂)</td><td>+ / ++</td><td>+ / ++</td><td>+ / ++</td></tr>
+                                    <tr><td>HT (PES/CO)</td><td class="good">++/++</td><td class="good">++/++</td><td class="good">++/++</td></tr>
+                                    <tr><td>Continuous (PES/CO)</td><td class="good">++</td><td class="good">++</td><td class="good">++</td></tr>
+                                    <tr><td>PES/WO</td><td colspan="3">Suitable 106-120°C</td></tr>
+                                    <tr><td>CA / CTA / PA</td><td class="good">++/++/++</td><td class="good">++/++/++</td><td>++/++/+</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Light Fastness -->
+                    <div class="detail-card">
+                        <h4><span class="detail-icon">☀️</span> ความคงทนแสง (Light Fastness)</h4>
+                        <div class="table-wrapper">
+                            <table>
+                                <thead><tr><th>การทดสอบ</th><th>1/12 SD</th><th>1/3 SD</th><th>1/1 SD</th><th>2/1 SD</th></tr></thead>
+                                <tbody>
+                                    <tr><td>Xenon ISO 105-B02</td><td>6</td><td>6</td><td>5-6</td><td>6-7</td></tr>
+                                    <tr><td>Carbon arc AATCC 16A</td><td class="bad">3</td><td class="warn">3-4</td><td class="warn">3-4</td><td class="warn">3-4</td></tr>
+                                    <tr><td>Sublimation 180°C</td><td>5</td><td>5</td><td>4-5</td><td>4-5</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="inline-warning">⚠️ Carbon arc ต่ำ — ไม่เหมาะผลิตภัณฑ์กลางแจ้ง</div>
+                    </div>
+
+                    <!-- Wash Fastness -->
+                    <div class="detail-card full-width">
+                        <h4><span class="detail-icon">🌊</span> ความคงทนการซัก — Polyester 100%</h4>
+                        <div class="table-wrapper">
+                            <table>
+                                <thead><tr><th>การทดสอบ</th><th>F</th><th>CA</th><th>CO</th><th>PA</th><th>PES</th><th>PAN</th><th>WO</th></tr></thead>
+                                <tbody>
+                                    <tr><td>Water fastness severe</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td></tr>
+                                    <tr><td>Home laundry 50°C</td><td>5</td><td>5</td><td>5</td><td class="warn">3-4</td><td>4-5</td><td>5</td><td>5</td></tr>
+                                    <tr><td>Washing 50°C/120°F</td><td>5</td><td>4-5</td><td>5</td><td class="warn">3-4</td><td>4-5</td><td>5</td><td>4-5</td></tr>
+                                    <tr><td>Perspiration alk.</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td></tr>
+                                    <tr><td>Perspiration acid</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td></tr>
+                                    <tr><td>Rubbing dry / wet</td><td colspan="7">4-5 / 4-5</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Staining -->
+                    <div class="detail-card">
+                        <h4><span class="detail-icon">🎨</span> การเปื้อนในเส้นใยผสม</h4>
+                        <div class="table-wrapper">
+                            <table>
+                                <thead><tr><th></th><th>Cotton 130°C</th><th>Thermosol</th><th>Wool 105°C</th><th>Acrylic 105°C</th><th>Triacetate</th><th>Polyamide</th></tr></thead>
+                                <tbody>
+                                    <tr><td>Rinsed</td><td>2</td><td>1</td><td>1</td><td>1-2</td><td>2 G</td><td class="warn">3 D</td></tr>
+                                    <tr><td>Reduction clearing</td><td>2-3</td><td>1-2 R</td><td>1 R</td><td>1-2</td><td>-</td><td>-</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Metamerism -->
+                    <div class="detail-card">
+                        <h4><span class="detail-icon">💡</span> การเปลี่ยนสีภายใต้แสงเทียม</h4>
+                        <div class="metamerism-grid">
+                            <div class="metamerism-item">
+                                <span class="light-type">Tungsten</span>
+                                <span class="light-effect">greener, duller<br><small>เขียวขึ้น, ทึบขึ้น</small></span>
+                            </div>
+                            <div class="metamerism-item">
+                                <span class="light-type">TL 84</span>
+                                <span class="light-effect">redder, duller<br><small>แดงขึ้น, ทึบขึ้น</small></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Orange Detail -->
+            <div class="tab-content" id="tab-orange">
+                <div class="detail-grid">
+                    <div class="detail-card">
+                        <h4><span class="detail-icon">🧪</span> ความเหมาะสม (Suitability)</h4>
+                        <div class="table-wrapper">
+                            <table>
+                                <thead><tr><th>กระบวนการ</th><th>Pale</th><th>Medium</th><th>Dark</th></tr></thead>
+                                <tbody>
+                                    <tr><td>HT Yarn / Piece</td><td class="good">++/++</td><td class="good">++/++</td><td class="good">++/++</td></tr>
+                                    <tr><td>ใช้ Carrier</td><td class="ok">+</td><td class="bad">-</td><td class="bad">-</td></tr>
+                                    <tr><td>พิมพ์ HTS / PS</td><td class="good">++/++</td><td class="good">++/++</td><td class="good">++/++</td></tr>
+                                    <tr><td>Discharge Ground (alk./SnCl₂)</td><td>- / ++</td><td>- / ++</td><td>- / ++</td></tr>
+                                    <tr><td>Discharge Illumination</td><td class="bad">- / -</td><td class="bad">- / -</td><td class="bad">- / -</td></tr>
+                                    <tr><td>HT (PES/CO)</td><td class="good">++/++</td><td class="good">++/++</td><td class="good">++/++</td></tr>
+                                    <tr><td>Continuous (PES/CO)</td><td class="good">++</td><td class="good">++</td><td class="good">++</td></tr>
+                                    <tr><td>PES/WO</td><td colspan="3">Suitable 120°C</td></tr>
+                                    <tr><td>CA / CTA / PA</td><td>+/++/+</td><td>+/++/+</td><td class="bad">-/+/-</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <h4><span class="detail-icon">☀️</span> ความคงทนแสง</h4>
+                        <div class="table-wrapper">
+                            <table>
+                                <thead><tr><th>การทดสอบ</th><th>1/12 SD</th><th>1/3 SD</th><th>1/1 SD</th><th>2/1 SD</th></tr></thead>
+                                <tbody>
+                                    <tr><td>Xenon ISO 105-B02</td><td>5-6</td><td>5-6</td><td>6-7</td><td>6-7</td></tr>
+                                    <tr><td>Carbon arc AATCC 16A</td><td>4-5</td><td>4-5</td><td>5-6</td><td>5-6</td></tr>
+                                    <tr><td>Sublimation 180°C</td><td>5</td><td>5</td><td>5</td><td>4-5</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="detail-card full-width">
+                        <h4><span class="detail-icon">🌊</span> ความคงทนการซัก — Polyester 100%</h4>
+                        <div class="table-wrapper">
+                            <table>
+                                <thead><tr><th>การทดสอบ</th><th>F</th><th>CA</th><th>CO</th><th>PA</th><th>PES</th><th>PAN</th><th>WO</th></tr></thead>
+                                <tbody>
+                                    <tr><td>Water fastness severe</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td></tr>
+                                    <tr><td>Home laundry 50°C</td><td>5</td><td>5</td><td>5</td><td>4</td><td>5</td><td>5</td><td>5</td></tr>
+                                    <tr><td>Washing 50°C/120°F</td><td>5</td><td>4-5</td><td>5</td><td>4</td><td>5</td><td>5</td><td>5</td></tr>
+                                    <tr><td>Perspiration alk.</td><td>5</td><td>5</td><td>5</td><td>4-5</td><td>5</td><td>5</td><td>5</td></tr>
+                                    <tr><td>Perspiration acid</td><td>5</td><td>5</td><td>5</td><td>4-5</td><td>5</td><td>5</td><td>5</td></tr>
+                                    <tr><td>Rubbing dry / wet</td><td colspan="7">4-5 / 5</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <h4><span class="detail-icon">🎨</span> การเปื้อนในเส้นใยผสม</h4>
+                        <div class="table-wrapper">
+                            <table>
+                                <thead><tr><th></th><th>Cotton 130°C</th><th>Thermosol</th><th>Wool</th><th>Acrylic</th><th>Triacetate</th><th>Polyamide</th></tr></thead>
+                                <tbody>
+                                    <tr><td>Rinsed</td><td class="warn">3-4</td><td>1-2</td><td>1</td><td>1-2</td><td class="warn">3</td><td class="warn">3 D</td></tr>
+                                    <tr><td>Red. clearing</td><td class="bad">4-5</td><td class="bad">4-5</td><td>1</td><td>2</td><td>-</td><td>-</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="inline-warning warning-danger">🚨 เปื้อน Cotton แย่ลงหลัง Reduction clearing!</div>
+                    </div>
+
+                    <div class="detail-card">
+                        <h4><span class="detail-icon">💡</span> การเปลี่ยนสีภายใต้แสงเทียม</h4>
+                        <div class="metamerism-grid">
+                            <div class="metamerism-item">
+                                <span class="light-type">Tungsten</span>
+                                <span class="light-effect">yellower<br><small>เหลืองขึ้น</small></span>
+                            </div>
+                            <div class="metamerism-item">
+                                <span class="light-type">TL 84</span>
+                                <span class="light-effect">redder, brighter<br><small>แดงขึ้น, สว่างขึ้น</small></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Red Detail -->
+            <div class="tab-content" id="tab-red">
+                <div class="detail-grid">
+                    <div class="detail-card">
+                        <h4><span class="detail-icon">🧪</span> ความเหมาะสม (Suitability)</h4>
+                        <div class="table-wrapper">
+                            <table>
+                                <thead><tr><th>กระบวนการ</th><th>Pale</th><th>Medium</th><th>Dark</th></tr></thead>
+                                <tbody>
+                                    <tr><td>HT Yarn / Piece</td><td class="good">++/++</td><td class="good">++/++</td><td class="good">++/++</td></tr>
+                                    <tr><td>ใช้ Carrier</td><td class="bad">-</td><td class="bad">-</td><td class="bad">-</td></tr>
+                                    <tr><td>พิมพ์ HTS / PS</td><td class="good">++/++</td><td class="good">++/++</td><td class="good">++/++</td></tr>
+                                    <tr><td>Discharge (ทั้งหมด)</td><td class="bad">-</td><td class="bad">-</td><td class="bad">-</td></tr>
+                                    <tr><td>HT (PES/CO)</td><td class="good">++/++</td><td class="good">++/++</td><td class="good">++/++</td></tr>
+                                    <tr><td>Continuous (PES/CO)</td><td class="good">++</td><td class="good">++</td><td class="good">++</td></tr>
+                                    <tr><td>PES/WO</td><td class="bad" colspan="3">ไม่เหมาะ (-)</td></tr>
+                                    <tr><td>CA / CTA / PA</td><td>+/+/-</td><td>+/+/-</td><td>+/+/-</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="inline-warning warning-danger">🚨 ห้ามใช้ Carrier, ย้อม PES/WO ไม่ได้, PA ใช้ไม่ได้</div>
+                    </div>
+
+                    <div class="detail-card">
+                        <h4><span class="detail-icon">☀️</span> ความคงทนแสง</h4>
+                        <div class="table-wrapper">
+                            <table>
+                                <thead><tr><th>การทดสอบ</th><th>1/12 SD</th><th>1/3 SD</th><th>1/1 SD</th><th>2/1 SD</th></tr></thead>
+                                <tbody>
+                                    <tr><td>Xenon ISO 105-B02</td><td>5</td><td>5</td><td>5-6</td><td>5-6</td></tr>
+                                    <tr><td>Carbon arc AATCC 16A</td><td>5-6</td><td>5-6</td><td>5-6</td><td>5-6</td></tr>
+                                    <tr><td>Sublimation 180°C</td><td class="good">5</td><td class="good">5</td><td class="good">5</td><td class="good">5</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="inline-note">✅ Sublimation fastness ดีสม่ำเสมอ (5 ทุกระดับ)</div>
+                    </div>
+
+                    <div class="detail-card full-width">
+                        <h4><span class="detail-icon">🌊</span> ความคงทนการซัก — Polyester 100%</h4>
+                        <div class="table-wrapper">
+                            <table>
+                                <thead><tr><th>การทดสอบ</th><th>F</th><th>CA</th><th>CO</th><th>PA</th><th>PES</th><th>PAN</th><th>WO</th></tr></thead>
+                                <tbody>
+                                    <tr><td>Water fastness severe</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td></tr>
+                                    <tr><td>Home laundry 50°C</td><td>5</td><td>4-5</td><td>4-5</td><td class="bad">2-3</td><td>4-5</td><td>5</td><td>4-5</td></tr>
+                                    <tr><td>Washing 50°C/120°F</td><td>5</td><td>4</td><td>5</td><td class="bad">2-3</td><td>5</td><td>5</td><td>4-5</td></tr>
+                                    <tr><td>Perspiration alk.</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td></tr>
+                                    <tr><td>Perspiration acid</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td></tr>
+                                    <tr><td>Rubbing dry / wet</td><td colspan="7">5 / 5</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="inline-warning warning-danger">🚨 PA ทนซักต่ำ (2-3) — ปัญหาหนักกับผ้าผสม PES/PA</div>
+                    </div>
+
+                    <div class="detail-card">
+                        <h4><span class="detail-icon">🎨</span> การเปื้อนในเส้นใยผสม</h4>
+                        <div class="table-wrapper">
+                            <table>
+                                <thead><tr><th></th><th>Cotton</th><th>Thermosol</th><th>Wool</th><th>Acrylic</th><th>Triacetate</th><th>Polyamide</th></tr></thead>
+                                <tbody>
+                                    <tr><td>Rinsed</td><td>2-3</td><td>1-2</td><td>1</td><td>1</td><td class="bad">4</td><td class="bad">5</td></tr>
+                                    <tr><td>Red. clearing</td><td class="bad">5</td><td class="bad">4-5</td><td>1</td><td>1</td><td>-</td><td>-</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="inline-warning warning-danger">🚨 เปื้อน Polyamide = 5 (สูงสุด!) เปื้อน Cotton = 5 หลัง R/C</div>
+                    </div>
+
+                    <div class="detail-card">
+                        <h4><span class="detail-icon">💡</span> การเปลี่ยนสีภายใต้แสงเทียม</h4>
+                        <div class="metamerism-grid">
+                            <div class="metamerism-item">
+                                <span class="light-type">Tungsten</span>
+                                <span class="light-effect">yellower, brighter<br><small>เหลืองขึ้น, สว่างขึ้น</small></span>
+                            </div>
+                            <div class="metamerism-item">
+                                <span class="light-type">TL 84</span>
+                                <span class="light-effect">yellower<br><small>เหลืองขึ้น</small></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Yellow Detail -->
+            <div class="tab-content" id="tab-yellow">
+                <div class="detail-grid">
+                    <div class="detail-card">
+                        <h4><span class="detail-icon">🧪</span> ความเหมาะสม (Suitability)</h4>
+                        <div class="table-wrapper">
+                            <table>
+                                <thead><tr><th>กระบวนการ</th><th>Pale</th><th>Medium</th><th>Dark</th></tr></thead>
+                                <tbody>
+                                    <tr><td>HT Yarn / Piece</td><td class="good">++/++</td><td class="good">++/++</td><td class="good">++/++</td></tr>
+                                    <tr><td>ใช้ Carrier</td><td class="bad">-</td><td class="bad">-</td><td class="bad">-</td></tr>
+                                    <tr><td>พิมพ์ HTS / PS</td><td class="good">++/++</td><td class="good">++/++</td><td class="good">++/++</td></tr>
+                                    <tr><td>Discharge Ground (alk./SnCl₂)</td><td>+ / -</td><td>+ / -</td><td>+ / -</td></tr>
+                                    <tr><td>Discharge Illumination</td><td>- / ++</td><td>- / ++</td><td>- / ++</td></tr>
+                                    <tr><td>HT (PES/CO)</td><td class="good">++/++</td><td class="good">++/++</td><td class="good">++/++</td></tr>
+                                    <tr><td>Continuous (PES/CO)</td><td class="good">++</td><td class="good">++</td><td class="good">++</td></tr>
+                                    <tr><td>PES/WO</td><td colspan="3">Suitable 106-120°C</td></tr>
+                                    <tr><td>CA / CTA / PA</td><td>+/++/-</td><td>+/++/-</td><td>+/++/-</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <h4><span class="detail-icon">☀️</span> ความคงทนแสง ⭐ ดีสุดในกลุ่ม</h4>
+                        <div class="table-wrapper">
+                            <table>
+                                <thead><tr><th>การทดสอบ</th><th>1/12 SD</th><th>1/3 SD</th><th>1/1 SD</th><th>2/1 SD</th></tr></thead>
+                                <tbody>
+                                    <tr><td>Xenon ISO 105-B02</td><td>6-7</td><td class="good">7</td><td class="good">7</td><td class="good">7</td></tr>
+                                    <tr><td>Carbon arc AATCC 16A</td><td>6-7</td><td class="good">7</td><td class="good">7-8</td><td class="good">7-8</td></tr>
+                                    <tr><td>Sublimation 180°C</td><td>5</td><td>5</td><td>4-5</td><td class="warn">4</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="inline-note">⭐ Xenon 7, Carbon arc 7-8 = ยอดเยี่ยม!</div>
+                    </div>
+
+                    <div class="detail-card full-width">
+                        <h4><span class="detail-icon">🌊</span> ความคงทนการซัก — Polyester 100%</h4>
+                        <div class="table-wrapper">
+                            <table>
+                                <thead><tr><th>การทดสอบ</th><th>F</th><th>CA</th><th>CO</th><th>PA</th><th>PES</th><th>PAN</th><th>WO</th></tr></thead>
+                                <tbody>
+                                    <tr><td>Water fastness severe</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td></tr>
+                                    <tr><td>Home laundry 50°C</td><td>5</td><td>5</td><td>5</td><td>4-5</td><td>5</td><td>5</td><td>5</td></tr>
+                                    <tr><td>Washing 50°C/120°F</td><td>5</td><td>4-5</td><td>5</td><td>4-5</td><td>5</td><td>5</td><td>5</td></tr>
+                                    <tr><td>Perspiration alk.</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td></tr>
+                                    <tr><td>Perspiration acid</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td></tr>
+                                    <tr><td>Rubbing dry / wet</td><td colspan="7">4-5 / 4-5</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <h4><span class="detail-icon">🎨</span> การเปื้อนในเส้นใยผสม</h4>
+                        <div class="table-wrapper">
+                            <table>
+                                <thead><tr><th></th><th>Cotton</th><th>Thermosol</th><th>Wool</th><th>Acrylic</th><th>Triacetate</th><th>Polyamide</th></tr></thead>
+                                <tbody>
+                                    <tr><td>Rinsed</td><td class="bad">4</td><td>2</td><td class="warn">2-3</td><td>2</td><td class="warn">3</td><td class="warn">3 R</td></tr>
+                                    <tr><td>Red. clearing</td><td class="bad">5</td><td class="bad">4-5</td><td class="bad">4</td><td>2-3</td><td>-</td><td>-</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="inline-warning">⚠️ เปื้อน Cotton/Wool สูง — ต้อง Reduction clear เข้มข้น</div>
+                    </div>
+
+                    <div class="detail-card">
+                        <h4><span class="detail-icon">💡</span> การเปลี่ยนสีภายใต้แสงเทียม</h4>
+                        <div class="metamerism-grid">
+                            <div class="metamerism-item">
+                                <span class="light-type">Tungsten</span>
+                                <span class="light-effect">redder<br><small>แดงขึ้น</small></span>
+                            </div>
+                            <div class="metamerism-item">
+                                <span class="light-type">TL 84</span>
+                                <span class="light-effect">brighter<br><small>สว่างขึ้น</small></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="comparison-section">
+        <div class="container">
+            <h2 class="section-title">ตารางเปรียบเทียบ</h2>
+            <p class="section-desc">เลือกหมวดเพื่อเปรียบเทียบข้ามสี</p>
+
+            <div class="compare-tabs">
+                <button class="compare-tab active" data-compare="light">☀️ ทนแสง</button>
+                <button class="compare-tab" data-compare="stain-pa">🧵 เปื้อน PA</button>
+                <button class="compare-tab" data-compare="stain-co">🧶 เปื้อน CO</button>
+                <button class="compare-tab" data-compare="carrier">⚗️ Carrier</button>
+            </div>
+
+            <div class="compare-content active" id="compare-light">
+                <div class="compare-chart">
+                    <h4>Light Fastness ที่ 1/1 SD</h4>
+                    <div class="bar-chart">
+                        <div class="bar-group">
+                            <span class="bar-label">Xenon</span>
+                            <div class="bars">
+                                <div class="bar bar-blue" style="--value: 72"><span>5-6</span></div>
+                                <div class="bar bar-orange-c" style="--value: 85"><span>6-7</span></div>
+                                <div class="bar bar-red-c" style="--value: 72"><span>5-6</span></div>
+                                <div class="bar bar-yellow-c" style="--value: 100"><span>7 ⭐</span></div>
+                            </div>
+                        </div>
+                        <div class="bar-group">
+                            <span class="bar-label">Carbon arc</span>
+                            <div class="bars">
+                                <div class="bar bar-blue" style="--value: 43"><span>3-4</span></div>
+                                <div class="bar bar-orange-c" style="--value: 72"><span>5-6</span></div>
+                                <div class="bar bar-red-c" style="--value: 72"><span>5-6</span></div>
+                                <div class="bar bar-yellow-c" style="--value: 100"><span>7-8 ⭐</span></div>
+                            </div>
+                        </div>
+                        <div class="bar-group">
+                            <span class="bar-label">Sublimation</span>
+                            <div class="bars">
+                                <div class="bar bar-blue" style="--value: 75"><span>4-5</span></div>
+                                <div class="bar bar-orange-c" style="--value: 88"><span>5</span></div>
+                                <div class="bar bar-red-c" style="--value: 88"><span>5</span></div>
+                                <div class="bar bar-yellow-c" style="--value: 75"><span>4-5</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-legend">
+                        <span class="legend-item"><span class="legend-dot legend-blue"></span>Blue</span>
+                        <span class="legend-item"><span class="legend-dot legend-orange"></span>Orange</span>
+                        <span class="legend-item"><span class="legend-dot legend-red"></span>Red</span>
+                        <span class="legend-item"><span class="legend-dot legend-yellow"></span>Yellow</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="compare-content" id="compare-stain-pa">
+                <div class="stain-compare">
+                    <h4>ระดับเปื้อน Polyamide (Rinsed) — ยิ่งต่ำยิ่งดี</h4>
+                    <div class="stain-bars">
+                        <div class="stain-item">
+                            <span class="stain-label">🔵 Blue</span>
+                            <div class="stain-bar-track"><div class="stain-bar stain-warn" style="width: 60%"><span>3 D</span></div></div>
+                        </div>
+                        <div class="stain-item">
+                            <span class="stain-label">🟠 Orange</span>
+                            <div class="stain-bar-track"><div class="stain-bar stain-warn" style="width: 60%"><span>3 D</span></div></div>
+                        </div>
+                        <div class="stain-item">
+                            <span class="stain-label">🔴 Red</span>
+                            <div class="stain-bar-track"><div class="stain-bar stain-danger" style="width: 100%"><span>5 🚨</span></div></div>
+                        </div>
+                        <div class="stain-item">
+                            <span class="stain-label">🟡 Yellow</span>
+                            <div class="stain-bar-track"><div class="stain-bar stain-warn" style="width: 60%"><span>3 R</span></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="compare-content" id="compare-stain-co">
+                <div class="stain-compare">
+                    <h4>ระดับเปื้อน Cotton (หลัง Reduction Clearing) — ยิ่งต่ำยิ่งดี</h4>
+                    <div class="stain-bars">
+                        <div class="stain-item">
+                            <span class="stain-label">🔵 Blue</span>
+                            <div class="stain-bar-track"><div class="stain-bar stain-ok" style="width: 40%"><span>2-3 ✅</span></div></div>
+                        </div>
+                        <div class="stain-item">
+                            <span class="stain-label">🟠 Orange</span>
+                            <div class="stain-bar-track"><div class="stain-bar stain-warn" style="width: 80%"><span>4-5 ⚠️</span></div></div>
+                        </div>
+                        <div class="stain-item">
+                            <span class="stain-label">🔴 Red</span>
+                            <div class="stain-bar-track"><div class="stain-bar stain-danger" style="width: 100%"><span>5 🚨</span></div></div>
+                        </div>
+                        <div class="stain-item">
+                            <span class="stain-label">🟡 Yellow</span>
+                            <div class="stain-bar-track"><div class="stain-bar stain-danger" style="width: 100%"><span>5 🚨</span></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="compare-content" id="compare-carrier">
+                <div class="carrier-compare">
+                    <h4>ความเหมาะสมกับการใช้ Carrier</h4>
+                    <div class="carrier-grid">
+                        <div class="carrier-item carrier-ok">
+                            <div class="carrier-color">🔵 Blue S-BG</div>
+                            <div class="carrier-status">✅ Pale: ++ / Medium: +</div>
+                            <div class="carrier-note">ใช้ได้สีอ่อน-กลาง</div>
+                        </div>
+                        <div class="carrier-item carrier-limited">
+                            <div class="carrier-color">🟠 Orange S-G</div>
+                            <div class="carrier-status">⚠️ Pale: + เท่านั้น</div>
+                            <div class="carrier-note">ใช้ได้เฉพาะสีอ่อน</div>
+                        </div>
+                        <div class="carrier-item carrier-no">
+                            <div class="carrier-color">🔴 Red S-G 01</div>
+                            <div class="carrier-status">❌ ห้ามใช้</div>
+                            <div class="carrier-note">ไม่ได้ทุกระดับ</div>
+                        </div>
+                        <div class="carrier-item carrier-no">
+                            <div class="carrier-color">🟡 Yellow S-6G</div>
+                            <div class="carrier-status">❌ ห้ามใช้</div>
+                            <div class="carrier-note">ไม่ได้ทุกระดับ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Water Quality Analysis -->
+    <section class="water-section">
+        <div class="container">
+            <h2 class="section-title">💧 วิเคราะห์คุณภาพน้ำ vs สีย้อม</h2>
+            <p class="section-desc">ข้อมูลจากรายงาน Softener Analysis (ปี 2024-2025) เทียบกับข้อจำกัดของสีแต่ละตัว</p>
+
+            <!-- Water Quality Data Table -->
+            <div class="water-data-card">
+                <h4><span class="detail-icon">📋</span> ข้อมูลคุณภาพน้ำ Softener (ล่าสุด 12/6/2025)</h4>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>พารามิเตอร์</th>
+                                <th>หน่วย</th>
+                                <th>STD</th>
+                                <th>6/6/24</th>
+                                <th>22/10/24</th>
+                                <th>13/3/25</th>
+                                <th>12/6/25</th>
+                                <th>สถานะ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>pH (25°C)</td>
+                                <td>-</td>
+                                <td>6.5-8.5</td>
+                                <td>7.60</td>
+                                <td>7.70</td>
+                                <td>7.8</td>
+                                <td>7.7</td>
+                                <td class="good">✅ ผ่าน</td>
+                            </tr>
+                            <tr>
+                                <td>Turbidity</td>
+                                <td>NTU</td>
+                                <td>≤ 5</td>
+                                <td>0.05</td>
+                                <td>0.11</td>
+                                <td>0.19</td>
+                                <td class="warn">1.2</td>
+                                <td class="warn">⚠️ สูงขึ้น</td>
+                            </tr>
+                            <tr>
+                                <td>Total Hardness</td>
+                                <td>mg/L CaCO3</td>
+                                <td>≤ 100</td>
+                                <td>< 2.0</td>
+                                <td>< 2.0</td>
+                                <td>< 2.0</td>
+                                <td>< 2.0</td>
+                                <td class="good">✅ ดีมาก</td>
+                            </tr>
+                            <tr>
+                                <td>Iron (Fe)</td>
+                                <td>mg/L</td>
+                                <td>≤ 0.3</td>
+                                <td>0.020</td>
+                                <td>ND</td>
+                                <td>0.035</td>
+                                <td>< 0.01</td>
+                                <td class="good">✅ ผ่าน</td>
+                            </tr>
+                            <tr>
+                                <td>Chloride</td>
+                                <td>mg/L</td>
+                                <td>≤ 250</td>
+                                <td>202</td>
+                                <td>207</td>
+                                <td>232</td>
+                                <td class="bad">252</td>
+                                <td class="bad">❌ เกิน!</td>
+                            </tr>
+                            <tr>
+                                <td>Conductivity</td>
+                                <td>µS/cm</td>
+                                <td>-</td>
+                                <td>1,519</td>
+                                <td>1,236</td>
+                                <td>1,611</td>
+                                <td>1,609</td>
+                                <td class="warn">⚠️ สูง</td>
+                            </tr>
+                            <tr>
+                                <td>Alkalinity MO</td>
+                                <td>mg/L CaCO3</td>
+                                <td>-</td>
+                                <td>280</td>
+                                <td>224</td>
+                                <td>274</td>
+                                <td>256</td>
+                                <td class="warn">⚠️ ค่อนข้างสูง</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Impact per Color -->
+            <h4 class="water-sub-title">ผลกระทบต่อสีแต่ละตัว</h4>
+            <div class="water-impact-grid">
+                <!-- Blue -->
+                <div class="water-impact-card water-card-blue">
+                    <div class="water-impact-header">
+                        <span class="water-color-dot" style="background: var(--blue)"></span>
+                        <h5>Blue S-BG</h5>
+                    </div>
+                    <div class="water-checks">
+                        <div class="water-check water-pass">
+                            <span class="check-icon">✅</span>
+                            <div>
+                                <strong>pH 7.7 → อยู่ในช่วง 3.0-9.0</strong>
+                                <p>ไม่มีปัญหา ช่วง pH กว้างรองรับได้</p>
+                            </div>
+                        </div>
+                        <div class="water-check water-warn">
+                            <span class="check-icon">⚠️</span>
+                            <div>
+                                <strong>Fe sensitivity = 5 (ไวสูงมาก)</strong>
+                                <p>Fe 0.035 แม้ต่ำกว่า STD แต่สีนี้ไวมาก → ควรใช้ EDTA</p>
+                            </div>
+                        </div>
+                        <div class="water-check water-pass">
+                            <span class="check-icon">✅</span>
+                            <div>
+                                <strong>Cu sensitivity = 1 (ไม่ไว)</strong>
+                                <p>ไม่ต้องกังวลเรื่องทองแดง</p>
+                            </div>
+                        </div>
+                        <div class="water-check water-pass">
+                            <span class="check-icon">✅</span>
+                            <div>
+                                <strong>Hardness < 2.0 (นุ่มมาก)</strong>
+                                <p>ใช้ได้เลย ไม่กระทบ leveling</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="water-verdict verdict-ok">
+                        <strong>สรุป:</strong> ใช้ได้ดี แนะนำเติม Sequestering agent สำหรับ Fe
+                    </div>
+                </div>
+
+                <!-- Orange -->
+                <div class="water-impact-card water-card-orange">
+                    <div class="water-impact-header">
+                        <span class="water-color-dot" style="background: var(--orange)"></span>
+                        <h5>Orange S-G 200%</h5>
+                    </div>
+                    <div class="water-checks">
+                        <div class="water-check water-pass">
+                            <span class="check-icon">✅</span>
+                            <div>
+                                <strong>pH 7.7 → อยู่ในช่วง 3.0-9.0</strong>
+                                <p>ไม่มีปัญหา</p>
+                            </div>
+                        </div>
+                        <div class="water-check water-danger">
+                            <span class="check-icon">🚨</span>
+                            <div>
+                                <strong>Fe sensitivity = 5 + Cu = 5 (ไวสูงสุด!)</strong>
+                                <p>แม้ Fe ต่ำ (0.035) แต่ไวระดับ 5 → <strong>ต้องใช้ Sequestering agent เสมอ!</strong></p>
+                            </div>
+                        </div>
+                        <div class="water-check water-warn">
+                            <span class="check-icon">⚠️</span>
+                            <div>
+                                <strong>ไม่มีข้อมูล Cu ในรายงาน</strong>
+                                <p>ต้องตรวจ Copper เพิ่ม เพราะ Orange ไว Cu = 5</p>
+                            </div>
+                        </div>
+                        <div class="water-check water-warn">
+                            <span class="check-icon">⚠️</span>
+                            <div>
+                                <strong>Conductivity สูง (1,609 µS/cm)</strong>
+                                <p>เกลือแร่ละลายสูง อาจกระทบ leveling</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="water-verdict verdict-danger">
+                        <strong>สรุป:</strong> ⚠️ เสี่ยงสูง — ต้องใช้ EDTA/Sequestering agent ทุกครั้ง + ตรวจ Cu
+                    </div>
+                </div>
+
+                <!-- Red -->
+                <div class="water-impact-card water-card-red">
+                    <div class="water-impact-header">
+                        <span class="water-color-dot" style="background: var(--red)"></span>
+                        <h5>Red S-G 01</h5>
+                    </div>
+                    <div class="water-checks">
+                        <div class="water-check water-danger">
+                            <span class="check-icon">🚨</span>
+                            <div>
+                                <strong>pH 7.7 → เกินช่วง 3.0-6.0!</strong>
+                                <p>น้ำ pH 7.7 ใช้ตรงๆ ไม่ได้ → <strong>ต้องเติมกรด Acetic/Citric ปรับ pH ลงมา 4.5-5.0</strong></p>
+                            </div>
+                        </div>
+                        <div class="water-check water-warn">
+                            <span class="check-icon">⚠️</span>
+                            <div>
+                                <strong>Fe sensitivity = 5 (ไวสูงมาก)</strong>
+                                <p>แม้ค่า Fe ต่ำ ยังคงต้องระวัง</p>
+                            </div>
+                        </div>
+                        <div class="water-check water-warn">
+                            <span class="check-icon">⚠️</span>
+                            <div>
+                                <strong>Alkalinity MO สูง (256 mg/L)</strong>
+                                <p>Alkalinity สูง → น้ำมี Buffering capacity → ต้องเติมกรดมากขึ้น</p>
+                            </div>
+                        </div>
+                        <div class="water-check water-danger">
+                            <span class="check-icon">🚨</span>
+                            <div>
+                                <strong>Chloride 252 mg/L (เกิน STD!)</strong>
+                                <p>Chloride เกิน → กัดกร่อนเครื่อง + กระทบคุณภาพสี</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="water-verdict verdict-critical">
+                        <strong>สรุป:</strong> 🚨 อันตรายสุด! ต้องปรับ pH ลง + ใช้กรดมากเพราะ Alkalinity สูง + แก้ Chloride
+                    </div>
+                </div>
+
+                <!-- Yellow -->
+                <div class="water-impact-card water-card-yellow">
+                    <div class="water-impact-header">
+                        <span class="water-color-dot" style="background: var(--yellow)"></span>
+                        <h5>Yellow S-6G</h5>
+                    </div>
+                    <div class="water-checks">
+                        <div class="water-check water-warn">
+                            <span class="check-icon">⚠️</span>
+                            <div>
+                                <strong>pH 7.7 → เกินช่วง 3.0-7.0 เล็กน้อย</strong>
+                                <p>เกิน 0.7 → ควรปรับ pH ลงมาใต้ 7.0 เพื่อความปลอดภัย</p>
+                            </div>
+                        </div>
+                        <div class="water-check water-warn">
+                            <span class="check-icon">⚠️</span>
+                            <div>
+                                <strong>Cu sensitivity = 4 (ไวค่อนข้างสูง)</strong>
+                                <p>ไม่มี Cu ในรายงาน → ต้องตรวจเพิ่ม</p>
+                            </div>
+                        </div>
+                        <div class="water-check water-pass">
+                            <span class="check-icon">✅</span>
+                            <div>
+                                <strong>Fe sensitivity = 2 (ไม่ค่อยไว)</strong>
+                                <p>Fe 0.035 อยู่ในเกณฑ์ปลอดภัย</p>
+                            </div>
+                        </div>
+                        <div class="water-check water-pass">
+                            <span class="check-icon">✅</span>
+                            <div>
+                                <strong>Hardness < 2.0 (นุ่มมาก)</strong>
+                                <p>ไม่กระทบ Barré coverage ที่ Excellent</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="water-verdict verdict-warn">
+                        <strong>สรุป:</strong> ⚠️ ปรับ pH ลงเล็กน้อย + ตรวจ Cu ก่อนใช้
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Items -->
+            <div class="water-actions-card">
+                <h4><span class="detail-icon">🔧</span> สิ่งที่ต้องทำ (Action Items)</h4>
+                <div class="action-grid">
+                    <div class="action-item action-critical">
+                        <div class="action-priority">ด่วน</div>
+                        <div class="action-text">
+                            <strong>แก้ไข Chloride เกิน 250 mg/L</strong>
+                            <p>แจ้งฝ่าย Softener ตรวจสอบระบบ — ค่าเพิ่มขึ้นต่อเนื่อง (202→252)</p>
+                        </div>
+                    </div>
+                    <div class="action-item action-critical">
+                        <div class="action-priority">ด่วน</div>
+                        <div class="action-text">
+                            <strong>ปรับ pH ก่อนย้อม Red S-G 01</strong>
+                            <p>เติม Acetic acid ปรับ pH จาก 7.7 ลงมา 4.5-5.0 (ระวัง Alkalinity buffer สูง)</p>
+                        </div>
+                    </div>
+                    <div class="action-item action-important">
+                        <div class="action-priority">สำคัญ</div>
+                        <div class="action-text">
+                            <strong>ใช้ Sequestering agent ทุกครั้ง</strong>
+                            <p>โดยเฉพาะ Orange (Cu/Fe=5/5) — ใช้ EDTA หรือ Polyphosphate</p>
+                        </div>
+                    </div>
+                    <div class="action-item action-important">
+                        <div class="action-priority">สำคัญ</div>
+                        <div class="action-text">
+                            <strong>เพิ่มตรวจ Copper (Cu) ในรอบถัดไป</strong>
+                            <p>Orange Cu=5, Yellow Cu=4 → ต้องรู้ค่า Cu เพื่อประเมินความเสี่ยง</p>
+                        </div>
+                    </div>
+                    <div class="action-item action-monitor">
+                        <div class="action-priority">เฝ้าดู</div>
+                        <div class="action-text">
+                            <strong>ค่า Turbidity สูงขึ้น (0.05→1.2)</strong>
+                            <p>ยังไม่เกิน STD (≤5) แต่เพิ่มขึ้น 24 เท่า — อาจกระทบ leveling</p>
+                        </div>
+                    </div>
+                    <div class="action-item action-monitor">
+                        <div class="action-priority">เฝ้าดู</div>
+                        <div class="action-text">
+                            <strong>ปรับ pH เล็กน้อยสำหรับ Yellow S-6G</strong>
+                            <p>pH 7.7 เกินช่วง 3-7 → ปรับลงมาใต้ 7.0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Red Deficiency Troubleshooting -->
+    <section class="trouble-section">
+        <div class="container">
+            <h2 class="section-title">🔍 วิเคราะห์ปัญหาจริง: ย้อมมาขาดแดง</h2>
+            <p class="section-desc">วิเคราะห์สาเหตุจากข้อมูล TDS + คุณภาพน้ำ Softener ที่ทำให้เฉดสีขาดแดงบ่อย</p>
+
+            <!-- Root Cause Diagram -->
+            <div class="trouble-hero">
+                <div class="trouble-scenario">
+                    <div class="trouble-scenario-header">
+                        <span class="trouble-icon-big">🧪</span>
+                        <div>
+                            <h4>สถานการณ์: ย้อมสีผสม (เช่น น้ำตาล เขียว ม่วง)</h4>
+                            <p>เวลาผสมสี Blue + Orange + Red เพื่อได้เฉดที่ต้องการ → ผลออกมาขาดแดง</p>
+                        </div>
+                    </div>
+                    <div class="trouble-flow">
+                        <div class="flow-step flow-water">
+                            <span class="flow-num">1</span>
+                            <div>
+                                <strong>น้ำ Softener pH 7.7</strong>
+                                <p>ค่าจริงจากรายงาน 12/6/2025</p>
+                            </div>
+                        </div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-step flow-ok">
+                            <span class="flow-num">2</span>
+                            <div>
+                                <strong>Blue (pH 3-9) ✅</strong>
+                                <p>จับเส้นใยได้ 100%</p>
+                            </div>
+                        </div>
+                        <div class="flow-step flow-ok">
+                            <span class="flow-num">2</span>
+                            <div>
+                                <strong>Orange (pH 3-9) ✅</strong>
+                                <p>จับเส้นใยได้ 100%</p>
+                            </div>
+                        </div>
+                        <div class="flow-step flow-fail">
+                            <span class="flow-num">2</span>
+                            <div>
+                                <strong>Red (pH 3-6) ❌</strong>
+                                <p>pH 7.7 เกิน! → จับไม่ได้/จับน้อย</p>
+                            </div>
+                        </div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-step flow-result">
+                            <span class="flow-num">3</span>
+                            <div>
+                                <strong>ผลลัพธ์: ขาดแดง!</strong>
+                                <p>เฉดเบี่ยงไปน้ำเงิน/ส้ม</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cause Ranking -->
+            <div class="cause-grid">
+                <div class="cause-card cause-critical">
+                    <div class="cause-rank">อันดับ 1</div>
+                    <div class="cause-header">
+                        <span class="cause-badge cause-badge-critical">🚨 สาเหตุหลัก</span>
+                        <h5>pH น้ำ 7.7 — เกินช่วง Red (3.0-6.0)</h5>
+                    </div>
+                    <div class="cause-body">
+                        <p><strong>กลไก:</strong> โมเลกุลสี Red S-G 01 ออกแบบมาให้ทำงานในสภาพกรด pH ≤ 6 เท่านั้น ที่ pH 7.7 โมเลกุลจะ <strong>ไม่แทรกซึมเข้าเส้นใย PES</strong> ในขณะที่ Blue/Orange ที่ pH กว้างถึง 9.0 ยังจับเส้นใยได้ปกติ</p>
+                        <div class="cause-evidence">
+                            <span class="evidence-label">หลักฐาน:</span>
+                            <span>TDS → pH 3-6 | น้ำจริง → pH 7.7 | ส่วนต่าง = <strong>+1.7 เกิน</strong></span>
+                        </div>
+                        <div class="cause-fix">
+                            <strong>แก้ไข:</strong> เติม Acetic acid / Citric acid ปรับ pH ลงมา 4.5-5.0 <strong>ก่อนเติมสี</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cause-card cause-high">
+                    <div class="cause-rank">อันดับ 2</div>
+                    <div class="cause-header">
+                        <span class="cause-badge cause-badge-high">⚠️ สาเหตุซ้ำเติม</span>
+                        <h5>Alkalinity MO สูง (256 mg/L) — pH กลับขึ้นตอนย้อม</h5>
+                    </div>
+                    <div class="cause-body">
+                        <p><strong>กลไก:</strong> แม้เติมกรดปรับ pH ลงแล้ว Alkalinity สูง = น้ำมี <strong>Buffer capacity สูง</strong> → pH จะ <strong>ค่อยๆ ไต่กลับขึ้น</strong> ระหว่างย้อม โดยเฉพาะช่วง Hold time ที่อุณหภูมิสูง</p>
+                        <div class="cause-evidence">
+                            <span class="evidence-label">หลักฐาน:</span>
+                            <span>Alkalinity MO = 256 mg/L (สูงกว่า 200) | ต้องใช้กรดมากกว่าปกติ</span>
+                        </div>
+                        <div class="cause-fix">
+                            <strong>แก้ไข:</strong> ใช้กรดมากกว่าสูตรปกติ 20-30% + ตรวจ pH กลางรอบ (mid-cycle) + ใช้ Buffer system
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cause-card cause-medium">
+                    <div class="cause-rank">อันดับ 3</div>
+                    <div class="cause-header">
+                        <span class="cause-badge cause-badge-medium">⚠️ ปัจจัยเสริม</span>
+                        <h5>Fe sensitivity = 5 — เหล็กทำให้สีเพี้ยน</h5>
+                    </div>
+                    <div class="cause-body">
+                        <p><strong>กลไก:</strong> Red ไว Fe ระดับ 5 (สูงสุด) แม้ Fe ต่ำ (0.035 mg/L) แต่ที่ pH สูงเหล็กจะ <strong>ตกตะกอนเป็น Fe(OH)₃</strong> เกาะผ้า ทำให้เฉดแดง<strong>หม่นลง/เปลี่ยน</strong></p>
+                        <div class="cause-evidence">
+                            <span class="evidence-label">หลักฐาน:</span>
+                            <span>Fe = 0.035 mg/L | Fe sensitivity Red = 5 | pH สูงเร่งปฏิกิริยา</span>
+                        </div>
+                        <div class="cause-fix">
+                            <strong>แก้ไข:</strong> เติม EDTA / Sequestering agent ก่อนเติมสีทุกครั้ง
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cause-card cause-medium">
+                    <div class="cause-rank">อันดับ 4</div>
+                    <div class="cause-header">
+                        <span class="cause-badge cause-badge-medium">⚠️ ตรวจสอบ</span>
+                        <h5>Thermofix 220°C — ตั้งอุณหภูมิต่ำไปหรือไม่?</h5>
+                    </div>
+                    <div class="cause-body">
+                        <p><strong>กลไก:</strong> Red ต้องการ <strong>220°C</strong> ในขณะที่สีอื่น (Blue, Orange, Yellow) ใช้ <strong>210°C</strong> ถ้าเตาอบตั้ง 210°C → สีแดงจะ <strong>ไม่ตรึงเข้าเนื้อผ้า</strong> → ซักแล้วหลุดมากกว่าสีอื่น</p>
+                        <div class="cause-evidence">
+                            <span class="evidence-label">หลักฐาน:</span>
+                            <span>TDS Red → 220°C | สีอื่น → 210°C | ส่วนต่าง = 10°C</span>
+                        </div>
+                        <div class="cause-fix">
+                            <strong>แก้ไข:</strong> ตรวจอุณหภูมิเตา Stenter ว่าตั้ง 220°C จริงหรือไม่
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cause-card cause-low">
+                    <div class="cause-rank">อันดับ 5</div>
+                    <div class="cause-header">
+                        <span class="cause-badge cause-badge-low">ℹ️ ปัจจัยรอง</span>
+                        <h5>Chloride เกิน 250 + Conductivity สูง</h5>
+                    </div>
+                    <div class="cause-body">
+                        <p><strong>กลไก:</strong> Chloride 252 เกิน STD + Conductivity 1,609 µS/cm สูง → เกลือแร่ในน้ำอาจ <strong>แข่งขันกับโมเลกุลสี</strong> ลด dye uptake ของ Red ที่อ่อนไหวอยู่แล้ว</p>
+                        <div class="cause-fix">
+                            <strong>แก้ไข:</strong> แจ้งฝ่าย Softener ตรวจสอบ + ปรับปรุงระบบกรองน้ำ
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cause-card cause-low">
+                    <div class="cause-rank">อันดับ 6</div>
+                    <div class="cause-header">
+                        <span class="cause-badge cause-badge-low">ℹ️ ข้อจำกัด</span>
+                        <h5>Red ห้ามใช้ Carrier — ไม่สามารถเร่งได้</h5>
+                    </div>
+                    <div class="cause-body">
+                        <p><strong>กลไก:</strong> Blue ใช้ Carrier เร่ง dye uptake ได้ แต่ Red <strong>ห้ามใช้ Carrier ทุกระดับ</strong> → ไม่มีทางเร่ง dye uptake เหมือนสีอื่น ทำให้ปัญหายิ่งเด่นชัดเมื่อย้อมร่วม</p>
+                        <div class="cause-fix">
+                            <strong>แก้ไข:</strong> ต้องแก้ที่ pH เป็นหลัก เพราะไม่สามารถชดเชยด้วย Carrier ได้
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Fix Summary -->
+            <div class="trouble-summary-card">
+                <h4>✅ สรุปแนวทางแก้ไข "ขาดแดง" — เรียงตามลำดับสำคัญ</h4>
+                <div class="fix-steps">
+                    <div class="fix-step">
+                        <div class="fix-num">1</div>
+                        <div class="fix-content">
+                            <strong>ปรับ pH น้ำลงเหลือ 4.5-5.0</strong>
+                            <p>เติม Acetic acid ก่อนเริ่มย้อม → วัด pH ด้วยเครื่องวัดที่สอบเทียบแล้ว</p>
+                        </div>
+                    </div>
+                    <div class="fix-step">
+                        <div class="fix-num">2</div>
+                        <div class="fix-content">
+                            <strong>เพิ่มปริมาณกรด 20-30%</strong>
+                            <p>เพราะ Alkalinity สูง (256) → น้ำต้านกรด → ต้องเติมมากกว่าสูตรมาตรฐาน</p>
+                        </div>
+                    </div>
+                    <div class="fix-step">
+                        <div class="fix-num">3</div>
+                        <div class="fix-content">
+                            <strong>ตรวจ pH กลางรอบย้อม</strong>
+                            <p>pH อาจไต่กลับระหว่าง Hold time → ถ้า > 6.0 ต้องเติมกรดเพิ่ม</p>
+                        </div>
+                    </div>
+                    <div class="fix-step">
+                        <div class="fix-num">4</div>
+                        <div class="fix-content">
+                            <strong>เติม EDTA / Sequestering agent</strong>
+                            <p>ดักจับ Fe ก่อนทำปฏิกิริยากับสีแดง (Fe sensitivity = 5)</p>
+                        </div>
+                    </div>
+                    <div class="fix-step">
+                        <div class="fix-num">5</div>
+                        <div class="fix-content">
+                            <strong>ตรวจอุณหภูมิ Thermofix = 220°C</strong>
+                            <p>Red ต้อง 220°C ไม่ใช่ 210°C เหมือนสีอื่น — ถ้าต่ำไปสีหลุดตอนซัก</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chloride Reduction Guide — Premium Edition -->
+    <section class="chloride-section">
+        <!-- Section Hero Banner -->
+        <div class="cl-hero">
+            <div class="cl-hero-bg"></div>
+            <div class="container">
+                <div class="cl-hero-content">
+                    <span class="cl-hero-badge">⚗️ WATER TREATMENT</span>
+                    <h2 class="cl-hero-title">แก้ปัญหา <span class="cl-highlight">Chloride เกิน</span></h2>
+                    <p class="cl-hero-subtitle">ไม่เปลี่ยนจุดสูบน้ำ — วิเคราะห์สาเหตุ + 5 วิธีแก้ไขจากน้ำดิบที่ใช้อยู่</p>
+                    <div class="cl-hero-chips">
+                        <span class="cl-chip cl-chip-danger">Cl⁻ 252 mg/L</span>
+                        <span class="cl-chip-sep">·</span>
+                        <span class="cl-chip cl-chip-warn">เกินมาตรฐาน WHO</span>
+                        <span class="cl-chip-sep">·</span>
+                        <span class="cl-chip cl-chip-good">5 วิธีแก้ไข</span>
+                    </div>
+                </div>
+                <!-- Floating orbs decorative -->
+                <div class="cl-hero-orbs" aria-hidden="true">
+                    <span class="cl-orb cl-orb-1"></span>
+                    <span class="cl-orb cl-orb-2"></span>
+                    <span class="cl-orb cl-orb-3"></span>
+                    <span class="cl-orb cl-orb-4"></span>
+                    <span class="cl-orb cl-orb-5"></span>
+                </div>
+            </div>
+            <div class="cl-scroll-indicator">
+                <span>เลื่อนลง</span>
+                <div class="cl-scroll-arrow"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- Cl⁻ Trend Chart -->
+            <div class="cl-trend-card">
+                <h4>📈 แนวโน้ม Chloride — ขาขึ้นต่อเนื่อง</h4>
+                <div class="cl-trend-chart">
+                    <div class="cl-trend-bar-wrap">
+                        <div class="cl-trend-label">6/6/24</div>
+                        <div class="cl-trend-track"><div class="cl-trend-bar cl-trend-ok" style="width:80.8%"><span>202</span></div></div>
+                    </div>
+                    <div class="cl-trend-bar-wrap">
+                        <div class="cl-trend-label">22/10/24</div>
+                        <div class="cl-trend-track"><div class="cl-trend-bar cl-trend-ok" style="width:82.8%"><span>207</span></div></div>
+                    </div>
+                    <div class="cl-trend-bar-wrap">
+                        <div class="cl-trend-label">13/3/25</div>
+                        <div class="cl-trend-track"><div class="cl-trend-bar cl-trend-warn" style="width:92.8%"><span>232</span></div></div>
+                    </div>
+                    <div class="cl-trend-bar-wrap">
+                        <div class="cl-trend-label">12/6/25</div>
+                        <div class="cl-trend-track"><div class="cl-trend-bar cl-trend-danger" style="width:100%"><span>252</span></div></div>
+                    </div>
+                    <div class="cl-trend-limit">
+                        <div class="cl-trend-limit-line"></div>
+                        <span>มาตรฐาน ≤250</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Root Cause — Visual -->
+            <div class="cl-root-cause">
+                <h4 class="cl-section-heading"><span class="cl-heading-icon">⚠️</span> ทำไม Chloride ถึงสูง? — ต้นตอ 2 ทาง</h4>
+                <div class="cl-source-grid">
+                    <div class="cl-source cl-source-nature">
+                        <div class="cl-source-icon">🌊</div>
+                        <div class="cl-source-tag">แหล่งที่ 1 — จากน้ำดิบ</div>
+                        <h5>น้ำดิบมี Chloride สูงอยู่แล้ว</h5>
+                        <p>น้ำบาดาล/น้ำผิวดินในพื้นที่มี Cl⁻ สูงจากธรรมชาติ (ดินเค็ม, การแทรกซึมน้ำทะเล)</p>
+                        <div class="cl-source-evidence">หลักฐาน: ค่าเพิ่มขึ้นต่อเนื่อง 202 → 207 → 232 → <strong>252</strong></div>
+                    </div>
+                    <div class="cl-source-plus">+</div>
+                    <div class="cl-source cl-source-softener">
+                        <div class="cl-source-icon">🧂</div>
+                        <div class="cl-source-tag">แหล่งที่ 2 — จาก Softener</div>
+                        <h5>เกลือ NaCl จากการ Regenerate</h5>
+                        <p>Regenerate resin → NaCl ละลายเป็น Na⁺ + <strong>Cl⁻</strong> หากรอบ Rinse สั้น/ใช้เกลือมากเกิน</p>
+                        <div class="cl-source-evidence">ตรวจสอบ: วัด Cl⁻ ก่อน vs หลัง Regenerate</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comparison Table -->
+            <div class="cl-compare-card">
+                <h4 class="cl-section-heading"><span class="cl-heading-icon">📊</span> เปรียบเทียบ 5 วิธี — เลือกวิธีที่ใช่</h4>
+                <div class="cl-compare-table-wrap">
+                    <table class="cl-compare-table">
+                        <thead>
+                            <tr>
+                                <th>วิธี</th>
+                                <th>ประสิทธิภาพ</th>
+                                <th>Cl⁻ หลังแก้ไข</th>
+                                <th>ลงทุน</th>
+                                <th>เวลาติดตั้ง</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="cl-row-best">
+                                <td><strong>① Reverse Osmosis</strong></td>
+                                <td>
+                                    <div class="cl-eff-bar">
+                                        <div class="cl-eff-track"><div class="cl-eff-fill" style="width:97%"></div></div>
+                                        <span>97%</span>
+                                    </div>
+                                </td>
+                                <td class="cl-val-good">5-25 mg/L</td>
+                                <td><span class="cl-cost cl-cost-high">●●●●●</span></td>
+                                <td>2-3 เดือน</td>
+                            </tr>
+                            <tr>
+                                <td><strong>② Anion Exchange</strong></td>
+                                <td>
+                                    <div class="cl-eff-bar">
+                                        <div class="cl-eff-track"><div class="cl-eff-fill" style="width:75%"></div></div>
+                                        <span>75%</span>
+                                    </div>
+                                </td>
+                                <td class="cl-val-good">30-80 mg/L</td>
+                                <td><span class="cl-cost cl-cost-mid">●●●○○</span></td>
+                                <td>2-4 สัปดาห์</td>
+                            </tr>
+                            <tr class="cl-row-highlight">
+                                <td><strong>③ ปรับ Softener</strong></td>
+                                <td>
+                                    <div class="cl-eff-bar">
+                                        <div class="cl-eff-track"><div class="cl-eff-fill" style="width:15%"></div></div>
+                                        <span>15%</span>
+                                    </div>
+                                </td>
+                                <td class="cl-val-mid">222-242 mg/L</td>
+                                <td><span class="cl-cost cl-cost-free">ฟรี</span></td>
+                                <td>ทำได้ทันที</td>
+                            </tr>
+                            <tr>
+                                <td><strong>④ Blending (RO 50%)</strong></td>
+                                <td>
+                                    <div class="cl-eff-bar">
+                                        <div class="cl-eff-track"><div class="cl-eff-fill" style="width:48%"></div></div>
+                                        <span>48%</span>
+                                    </div>
+                                </td>
+                                <td class="cl-val-good">~131 mg/L</td>
+                                <td><span class="cl-cost cl-cost-mid">●●●○○</span></td>
+                                <td>2-3 เดือน</td>
+                            </tr>
+                            <tr>
+                                <td><strong>⑤ Monitoring</strong></td>
+                                <td>
+                                    <div class="cl-eff-bar">
+                                        <div class="cl-eff-track"><div class="cl-eff-fill cl-eff-monitor" style="width:100%"></div></div>
+                                        <span>เฝ้าดู</span>
+                                    </div>
+                                </td>
+                                <td class="cl-val-na">—</td>
+                                <td><span class="cl-cost cl-cost-low">●○○○○</span></td>
+                                <td>1 สัปดาห์</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Method Cards — Detailed -->
+            <h4 class="cl-section-heading" style="margin-top:48px;"><span class="cl-heading-icon">🔧</span> รายละเอียดแต่ละวิธี</h4>
+
+            <div class="cl-method-list">
+                <!-- Method 1: RO -->
+                <div class="cl-method cl-method-best">
+                    <div class="cl-method-header">
+                        <div class="cl-method-rank"><span class="cl-rank-num">1</span></div>
+                        <div>
+                            <h5>Reverse Osmosis (RO)</h5>
+                            <span class="cl-method-tag cl-tag-best">🏆 แนะนำมากสุด — กำจัดได้ 90-99%</span>
+                        </div>
+                        <div class="cl-method-gauge">
+                            <svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="26" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="5"/><circle cx="30" cy="30" r="26" fill="none" stroke="var(--green)" stroke-width="5" stroke-dasharray="159" stroke-dashoffset="5" stroke-linecap="round" transform="rotate(-90 30 30)"/></svg>
+                            <span class="cl-gauge-text">97%</span>
+                        </div>
+                    </div>
+                    <div class="cl-method-body">
+                        <div class="cl-how">
+                            <p>ระบบ Reverse Osmosis ใช้ <strong>เมมเบรนกึ่งซึมผ่าน</strong> กรองน้ำภายใต้แรงดัน 10-15 bar ทำให้โมเลกุล Cl⁻, Na⁺, TDS, Conductivity, Fe, Turbidity ถูกกักไว้ฝั่ง Reject — น้ำที่ผ่านมีความบริสุทธิ์สูงมาก เหมาะกับงานย้อมสีที่ต้องการน้ำคุณภาพดีที่สุด</p>
+                        </div>
+                        <!-- Process Flow -->
+                        <div class="cl-process-flow">
+                            <div class="cl-pf-step">
+                                <div class="cl-pf-icon">🔧</div>
+                                <div class="cl-pf-label">Pre-filter<br><small>Sediment 5µm<br>+ Carbon</small></div>
+                            </div>
+                            <div class="cl-pf-arrow">→</div>
+                            <div class="cl-pf-step">
+                                <div class="cl-pf-icon">⚡</div>
+                                <div class="cl-pf-label">ปั๊มแรงดัน<br><small>10-15 bar</small></div>
+                            </div>
+                            <div class="cl-pf-arrow">→</div>
+                            <div class="cl-pf-step cl-pf-main">
+                                <div class="cl-pf-icon">🔬</div>
+                                <div class="cl-pf-label">RO Membrane<br><small>BW 4040/8040</small></div>
+                            </div>
+                            <div class="cl-pf-arrow">→</div>
+                            <div class="cl-pf-step">
+                                <div class="cl-pf-icon">💧</div>
+                                <div class="cl-pf-label">ปรับ pH<br><small>NaOH → pH 6.5+</small></div>
+                            </div>
+                            <div class="cl-pf-arrow">→</div>
+                            <div class="cl-pf-step cl-pf-result">
+                                <div class="cl-pf-icon">✅</div>
+                                <div class="cl-pf-label">น้ำบริสุทธิ์<br><small>Cl⁻ 5-25 mg/L</small></div>
+                            </div>
+                        </div>
+                        <div class="cl-method-detail">
+                            <div class="cl-pros-cons">
+                                <div class="cl-pros">
+                                    <strong>✅ ข้อดี</strong>
+                                    <ul>
+                                        <li>กำจัด Cl⁻ ได้เกือบหมด (90-99%)</li>
+                                        <li>ลด TDS, Conductivity, Fe, Turbidity พร้อมกัน</li>
+                                        <li>น้ำคุณภาพสูงสุด → ย้อมสีได้ผลดีที่สุด</li>
+                                    </ul>
+                                </div>
+                                <div class="cl-cons">
+                                    <strong>⚠️ ข้อเสีย</strong>
+                                    <ul>
+                                        <li>ค่าติดตั้งสูง (เครื่อง + ปั๊ม + เมมเบรน)</li>
+                                        <li>สูญเสียน้ำ 25-40% เป็นน้ำทิ้ง (Reject)</li>
+                                        <li>เปลี่ยนเมมเบรนทุก 2-3 ปี + ค่าไฟ</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Method 2: Anion Exchange -->
+                <div class="cl-method cl-method-good">
+                    <div class="cl-method-header">
+                        <div class="cl-method-rank"><span class="cl-rank-num">2</span></div>
+                        <div>
+                            <h5>Anion Exchange Resin</h5>
+                            <span class="cl-method-tag cl-tag-good">🧪 เรซินดักจับ Cl⁻ — ลดได้ 68-88%</span>
+                        </div>
+                        <div class="cl-method-gauge">
+                            <svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="26" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="5"/><circle cx="30" cy="30" r="26" fill="none" stroke="var(--blue)" stroke-width="5" stroke-dasharray="159" stroke-dashoffset="40" stroke-linecap="round" transform="rotate(-90 30 30)"/></svg>
+                            <span class="cl-gauge-text">75%</span>
+                        </div>
+                    </div>
+                    <div class="cl-method-body">
+                        <div class="cl-method-detail">
+                            <div class="cl-how">
+                                <p>ใช้ <strong>Strong Base Anion (SBA) resin</strong> ดักจับไอออน Cl⁻ (คลอไรด์) ออกจากน้ำ แล้วแทนที่ด้วย OH⁻ หรือ HCO₃⁻ ที่ไม่เป็นอันตราย ติดตั้ง <strong>ต่อหลัง Softener</strong> เป็น Polishing step เพื่อดักจับ Cl⁻ โดยเฉพาะ — เมื่อ Resin อิ่มตัวจะ Regenerate ด้วย NaOH ซึ่งดูแลง่ายคล้ายระบบ Softener ที่มีอยู่แล้ว</p>
+                            </div>
+                            <div class="cl-pros-cons">
+                                <div class="cl-pros"><strong>✅ ข้อดี</strong><ul><li>ค่าติดตั้งต่ำกว่า RO มาก</li><li>ไม่สูญเสียน้ำ (ไม่มี Reject 0%)</li><li>ดูแลง่ายมาก คล้าย Softener</li><li>ลด Cl⁻ ได้ 68-88% → เหลือ 30-80 mg/L</li></ul></div>
+                                <div class="cl-cons"><strong>⚠️ ข้อเสีย</strong><ul><li>ต้องใช้ NaOH Regenerate เป็นสารเคมีอันตราย</li><li>ไม่ลด TDS/Conductivity โดยรวม</li><li>ต้องตรวจ Anion resin กำลังดักจับอยู่หรือไม่</li></ul></div>
+                            </div>
+                            <div class="cl-result-box cl-result-good">ผลลัพธ์: Cl⁻ เหลือ <strong>30-80 mg/L</strong> — ต่ำกว่ามาตรฐานอย่างมาก ✅ เหมาะสำหรับโรงงานที่ไม่ต้องการลงทุนสูง</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Method 3: Optimize Softener -->
+                <div class="cl-method cl-method-quick">
+                    <div class="cl-method-header">
+                        <div class="cl-method-rank"><span class="cl-rank-num">3</span></div>
+                        <div>
+                            <h5>ปรับปรุงระบบ Softener</h5>
+                            <span class="cl-method-tag cl-tag-quick">⚡ ทำได้ทันที — ไม่ต้องลงทุน!</span>
+                        </div>
+                        <div class="cl-method-gauge">
+                            <svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="26" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="5"/><circle cx="30" cy="30" r="26" fill="none" stroke="var(--warn)" stroke-width="5" stroke-dasharray="159" stroke-dashoffset="135" stroke-linecap="round" transform="rotate(-90 30 30)"/></svg>
+                            <span class="cl-gauge-text">15%</span>
+                        </div>
+                    </div>
+                    <div class="cl-method-body">
+                        <div class="cl-method-detail">
+                            <div class="cl-how">
+                                <p><strong>ไม่ต้องลงทุน!</strong> ปรับระบบ Softener ที่มีอยู่ให้ลดปริมาณ Cl⁻ ที่ปนออกมาหลัง Regenerate — วิธีนี้ทำได้ทันทีไม่ต้องซื้ออุปกรณ์ใหม่ แม้จะลดได้เพียง 10-30 mg/L แต่เป็นขั้นตอนแรกที่ควรทำก่อนตัดสินใจลงทุน</p>
+                            </div>
+                            <div class="cl-checklist">
+                                <div class="cl-check-item"><span class="cl-check">☐</span> <strong>เพิ่มเวลา Rinse</strong> — นานขึ้น 50-100% จากเดิม → ไล่ Cl⁻ ตกค้าง</div>
+                                <div class="cl-check-item"><span class="cl-check">☐</span> <strong>ลดปริมาณเกลือ</strong> — ปกติ 80-120 g NaCl/ลิตร Resin ใช้เท่าที่จำเป็น</div>
+                                <div class="cl-check-item"><span class="cl-check">☐</span> <strong>ตรวจ Cycle</strong> — อย่าให้ resin หมดพิกัดแล้วไม่ Regenerate</div>
+                                <div class="cl-check-item"><span class="cl-check">☐</span> <strong>ล้าง Brine tank</strong> — ทุก 6 เดือน ป้องกันตะกอนเกลือ</div>
+                                <div class="cl-check-item"><span class="cl-check">☐</span> <strong>วัด Cl⁻ ก่อน/หลัง</strong> — ถ้าค่าต่างกันมาก = Rinse ไม่พอ</div>
+                            </div>
+                            <div class="cl-result-box cl-result-mid">ผลลัพธ์: ลด Cl⁻ ได้ <strong>10-30 mg/L</strong> จากแหล่ง Softener — <strong>ฟรี ไม่ต้องลงทุน!</strong></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Method 4: Blending -->
+                <div class="cl-method cl-method-alt">
+                    <div class="cl-method-header">
+                        <div class="cl-method-rank"><span class="cl-rank-num">4</span></div>
+                        <div>
+                            <h5>Blending (ผสมน้ำ RO + Soft)</h5>
+                            <span class="cl-method-tag cl-tag-alt">🔄 ลด Cl⁻ ตามสัดส่วนผสม</span>
+                        </div>
+                        <div class="cl-method-gauge">
+                            <svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="26" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="5"/><circle cx="30" cy="30" r="26" fill="none" stroke="var(--text-muted)" stroke-width="5" stroke-dasharray="159" stroke-dashoffset="83" stroke-linecap="round" transform="rotate(-90 30 30)"/></svg>
+                            <span class="cl-gauge-text">48%</span>
+                        </div>
+                    </div>
+                    <div class="cl-method-body">
+                        <div class="cl-method-detail">
+                            <div class="cl-how">
+                                <p>หลังติดตั้ง RO แล้ว ใช้วิธี <strong>ผสมน้ำ RO กับน้ำ Soft</strong> ตามสัดส่วนที่ต้องการ เพื่อลด Cl⁻ ลงตามอัตราส่วน โดยไม่ต้องใช้ RO เต็ม 100% ช่วยประหยัดค่าเมมเบรนและค่าไฟ — สัดส่วน 50:50 เป็นจุดที่ <strong>คุ้มค่าที่สุด</strong></p>
+                            </div>
+                            <div class="cl-blend-grid">
+                                <div class="cl-blend-item">
+                                    <div class="cl-blend-ratio">RO 30%</div>
+                                    <div class="cl-blend-result">Cl⁻ ≈ <strong>179</strong> mg/L</div>
+                                </div>
+                                <div class="cl-blend-item cl-blend-rec">
+                                    <div class="cl-blend-ratio">RO 50%</div>
+                                    <div class="cl-blend-result">Cl⁻ ≈ <strong>131</strong> mg/L ✅</div>
+                                </div>
+                                <div class="cl-blend-item">
+                                    <div class="cl-blend-ratio">RO 70%</div>
+                                    <div class="cl-blend-result">Cl⁻ ≈ <strong>83</strong> mg/L</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Method 5: Monitor -->
+                <div class="cl-method cl-method-alt">
+                    <div class="cl-method-header">
+                        <div class="cl-method-rank"><span class="cl-rank-num">5</span></div>
+                        <div>
+                            <h5>ระบบ Monitoring</h5>
+                            <span class="cl-method-tag cl-tag-alt">📡 ตรวจวัดต่อเนื่อง — ต้องทำเสมอ</span>
+                        </div>
+                    </div>
+                    <div class="cl-method-body">
+                        <div class="cl-method-detail">
+                            <div class="cl-how">
+                                <p>ระบบ Monitoring เป็น <strong>สิ่งที่ต้องทำควบคู่กับทุกวิธี</strong> — วัด Cl⁻ ทุกสัปดาห์ ตั้ง Alert เมื่อค่าเกินเกณฑ์ บันทึก Trend chart เพื่อเฝ้าดูแนวโน้มระยะยาว หากค่า <strong>> 200 mg/L ให้เตือน</strong> หากค่า <strong>> 250 mg/L ให้หยุดใช้น้ำ</strong>ในกระบวนการย้อมทันที</p>
+                            </div>
+                            <div class="cl-monitor-grid">
+                                <div class="cl-monitor-item">
+                                    <div class="cl-monitor-icon">🧪</div>
+                                    <strong>Test kit</strong>
+                                    <p>วัด Cl⁻ ทุกสัปดาห์</p>
+                                </div>
+                                <div class="cl-monitor-item">
+                                    <div class="cl-monitor-icon">📟</div>
+                                    <strong>Conductivity meter</strong>
+                                    <p>เฝ้าดู Real-time</p>
+                                </div>
+                                <div class="cl-monitor-item">
+                                    <div class="cl-monitor-icon">📊</div>
+                                    <strong>Trend chart</strong>
+                                    <p>บันทึกค่ารายสัปดาห์</p>
+                                </div>
+                                <div class="cl-monitor-item">
+                                    <div class="cl-monitor-icon">🚨</div>
+                                    <strong>Alert system</strong>
+                                    <p>> 200 เตือน | > 250 หยุด</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Premium Timeline -->
+            <div class="cl-plan-card">
+                <h4 class="cl-plan-title">📅 แผนดำเนินการ</h4>
+                <p class="cl-plan-sub">แนะนำเรียงตามลำดับ — เริ่มจากวิธีฟรีก่อน</p>
+                <div class="cl-timeline">
+                    <div class="cl-phase">
+                        <div class="cl-phase-line"></div>
+                        <div class="cl-phase-dot cl-dot-now"></div>
+                        <div class="cl-phase-badge cl-phase-now">🔴 ทำทันที</div>
+                        <div class="cl-phase-content">
+                            <strong>สัปดาห์ที่ 1-2: ปรับ Softener</strong>
+                            <p>เพิ่มเวลา Rinse ขึ้น 50-100% + ตรวจปริมาณเกลือ NaCl + วัด Cl⁻ ก่อน/หลัง Regenerate → คาดว่าลดได้ 10-30 mg/L จากแหล่ง Softener</p>
+                            <span class="cl-phase-cost">💰 ไม่ต้องลงทุน — ทำได้ทันที</span>
+                        </div>
+                    </div>
+                    <div class="cl-phase">
+                        <div class="cl-phase-line"></div>
+                        <div class="cl-phase-dot cl-dot-soon"></div>
+                        <div class="cl-phase-badge cl-phase-soon">🟡 เดือนที่ 1</div>
+                        <div class="cl-phase-content">
+                            <strong>ติดตั้งระบบ Monitoring + วัดผล</strong>
+                            <p>ซื้อ Cl⁻ Test kit + Conductivity meter online → ตรวจวัดสัปดาห์ละครั้ง → บันทึก Trend chart → ประเมินว่าการปรับ Softener ลด Cl⁻ ลงพอหรือไม่</p>
+                            <span class="cl-phase-cost">💰 ลงทุนต่ำ — มีตัวเลขชัดเจน</span>
+                        </div>
+                    </div>
+                    <div class="cl-phase">
+                        <div class="cl-phase-line cl-line-last"></div>
+                        <div class="cl-phase-dot cl-dot-plan"></div>
+                        <div class="cl-phase-badge cl-phase-plan">🔵 เดือนที่ 2-3</div>
+                        <div class="cl-phase-content">
+                            <strong>ประเมินผล → ตัดสินใจลงทุน RO หรือ Anion</strong>
+                            <p>ถ้า Cl⁻ ยังเกิน 250 หลังปรับ Softener → เสนอ 2 ทางเลือก: ① <strong>RO + Blending 50:50</strong> (Cl⁻ ≈ 131 mg/L ลงทุนสูง) หรือ ② <strong>Anion Exchange</strong> (Cl⁻ ≈ 30-80 mg/L ลงทุนปานกลาง) — ตัดสินใจตาม Budget</p>
+                            <span class="cl-phase-cost">💰 ตาม Budget และความเร่งด่วน</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendations -->
+    <section class="recommendations-section">
+        <div class="container">
+            <h2 class="section-title">🎯 คำแนะนำเชิงปฏิบัติ</h2>
+            <div class="rec-grid">
+                <div class="rec-card rec-general">
+                    <div class="rec-icon">📋</div>
+                    <h4>ข้อแนะนำทั่วไป</h4>
+                    <ul>
+                        <li><strong>ตรวจคุณภาพน้ำ</strong> (Fe, Cu) ก่อนย้อมทุกครั้ง</li>
+                        <li><strong>ควบคุม pH</strong> ให้ตรงตามช่วงของแต่ละสี</li>
+                        <li><strong>Reduction clearing</strong> จำเป็นสำหรับสีเข้ม</li>
+                        <li><strong>ตรวจ Metamerism</strong> ทุกครั้ง — สีเปลี่ยนภายใต้แสงต่างชนิด</li>
+                        <li><strong>อุณหภูมิ Thermofix</strong> ต้องตาม TDS เสมอ</li>
+                        <li>ค่าทดสอบเป็นวัสดุเดี่ยว — ค่าจริงในผสมอาจต่างกัน</li>
+                    </ul>
+                </div>
+                <div class="rec-card rec-best">
+                    <div class="rec-icon">⭐</div>
+                    <h4>สีที่ใช้ง่ายสุด</h4>
+                    <div class="rec-highlight blue-hl">🔵 Blue S-BG</div>
+                    <p>Level uptake 2 (ดีที่สุด), pH กว้าง 3-9, ใช้ Carrier ได้, เปื้อนน้อยสุด</p>
+                    <p class="rec-but"><strong>แต่:</strong> Carbon arc ต่ำ → ไม่เหมาะชุดกลางแจ้ง</p>
+                </div>
+                <div class="rec-card rec-light">
+                    <div class="rec-icon">☀️</div>
+                    <h4>ทนแสงดีสุด</h4>
+                    <div class="rec-highlight yellow-hl">🟡 Yellow S-6G</div>
+                    <p>Xenon 7, Carbon arc 7-8 (ยอดเยี่ยม), Barré Excellent</p>
+                    <p class="rec-but"><strong>แต่:</strong> เปื้อน Cotton/Wool หนัก → Reduction clear เข้มข้น</p>
+                </div>
+                <div class="rec-card rec-danger">
+                    <div class="rec-icon">🚨</div>
+                    <h4>ระวังมากสุด</h4>
+                    <div class="rec-highlight red-hl">🔴 Red S-G 01</div>
+                    <p>pH แคบ 3-6 (ห้ามด่าง), Thermofix 220°C, ห้าม Carrier, เปื้อน PA = 5</p>
+                    <p class="rec-but"><strong>สำคัญ:</strong> ย้อม PES/WO ไม่ได้, Discharge ไม่ทำงาน</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>ข้อมูลจาก DyStar® Technical Data Sheet — Creation date: 27.03.2026</p>
+            <p class="footer-note">⚠️ ไฟล์ <code>TDS Dianix Red S-G 01.pdf</code> มีเนื้อหาซ้ำกับ Blue S-BG (น่าจะไฟล์ผิด) — ข้อมูล Red ใช้จากไฟล์ <code>Red S-G 01 v.pdf</code></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
