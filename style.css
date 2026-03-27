@@ -2386,6 +2386,17 @@ td.bad { color: var(--danger); font-weight: 600; }
     font-weight: 700;
 }
 
+/* ===== Dev Credit ===== */
+.dev-credit {
+    text-align: center;
+    padding: 24px 0 32px;
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.25);
+    letter-spacing: 0.5px;
+}
+.dev-credit span { color: rgba(255,255,255,0.2); }
+.dev-credit strong { color: rgba(255,255,255,0.45); font-weight: 600; }
+
 /* ===== Footer ===== */
 .footer {
     padding: 40px 0;
